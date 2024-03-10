@@ -1,0 +1,43 @@
+﻿  pch.cpp
+  dllmain.cpp
+C:\Users\asdga\source\repos\Metin2_Packet_Editor_Test\Metin2_Packet_Editor_Test\dllmain.cpp(47,23): warning C4018: '<=': işaretli/işaretsiz uyuşmazlığı
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xstring(2860,53): warning C4244: 'bağımsız değişken': 'wchar_t' - 'const _Elem' dönüşümü; veri kaybı olabilir
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xstring(2719,1): message : derlenen şablon işlevi 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' örneği oluşturma başvurusuna bakın
+          with
+          [
+              _Size_type=unsigned int,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned int
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xstring(2719,37): message : derlenen şablon işlevi 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' örneği oluşturma başvurusuna bakın
+          with
+          [
+              _Size_type=unsigned int,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned int
+          ]
+C:\Users\asdga\source\repos\Metin2_Packet_Editor_Test\Metin2_Packet_Editor_Test\dllmain.cpp(27,13): message : derlenen şablon işlevi 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' örneği oluşturma başvurusuna bakın
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\asdga\source\repos\Metin2_Packet_Editor_Test\Metin2_Packet_Editor_Test\dllmain.cpp(27,16): message : derlenen şablon işlevi 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' örneği oluşturma başvurusuna bakın
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+  Kod üretiliyor
+  Previous IPDB not found, fall back to full compilation.
+  All 347 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Kodun üretilmesi tamamlandı
+  Metin2_Packet_Editor_Test.vcxproj -> C:\Users\asdga\source\repos\Metin2_Packet_Editor_Test\Release\Metin2_Packet_Editor_Test.dll
