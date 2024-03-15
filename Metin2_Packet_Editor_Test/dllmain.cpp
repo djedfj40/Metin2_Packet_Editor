@@ -125,35 +125,6 @@ void CapturePacket() { // capturing and writing sent packets to big text box
 
         }
 
-        void send_func(); {
-            if (send_check == 1) {
-                unsigned char data1[] = { 0x0D, 0x01, 0x03, 0x00, 0x01, 0x04, 0x00, 0x01, 0x00 }; // packet buffer
-                int dataSize = sizeof(data1); //packet buffer size
-                //int esi_address = 0x072BE940; // esi address
-
-                example_function_ptr func = (example_function_ptr)0x006DC7D0; // packet send function 
-                __asm {
-                    mov esi, esi_address;
-                    mov eax, esi
-                        add eax, 0x34 // esi+0x34 packet buffer size 
-                        mov esi, dataSize
-                        mov[eax], esi
-                }
-
-                DWORD writeThis1 = esi_address + 0x2c; // esi + 0x2c  packet buffer address
-                unsigned char** toWrite1 = reinterpret_cast<unsigned char**>(writeThis1);
-                unsigned char* writeAddress1 = reinterpret_cast<unsigned char*>(*toWrite1);
-
-                for (int i = 0; i <= dataSize; i++) { // write packet buffer
-                    writeAddress1[i] = data1[i];
-
-                }
-
-            }//if
-            send_check = 0;
-        }
-
-
     }
 }//
 
