@@ -15,3 +15,5 @@ If aob scan isn't working then put a breakpoint on "ws2_32.send" function and st
 Then change the HOOK_ADDRESS variable with the address you copied. Compile and use it
 
 Finally you must inject the dll with thread injection method otherwise the window won't spawn.
+
+![](https://raw.githubusercontent.com/djedfj40/Metin2_Packet_Editor/main/github.gif)
